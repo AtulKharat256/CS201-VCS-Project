@@ -29,7 +29,7 @@ Make sure you have:
   
      ```shell
      gh repo clone AtulKharat256/CS201-VCS-Project
-2. **Set Up Directory and Run:
+2. **Set Up Directory and Run**:
 
     Navigate to the `CS201-VCS-Project` folder.  
     Compile and run `main.cpp` to launch the VCS.
@@ -37,7 +37,7 @@ Make sure you have:
     ```shell
     g++ main.cpp -o vcs -lstdc++fs
     ./vcs
-3. **Specify a Working Directory:
+3. **Specify a Working Directory**:
 
     Upon running, you will be asked to specify a working directory and username for commits.
     Ensure the working directory is outside the CS201-VCS-Project folder.
