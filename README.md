@@ -1,4 +1,4 @@
-# **Simple Version Control System**
+# **Our own baby Version Control System (ATOM)**
 
 This project is a lightweight, custom-built Version Control System (VCS) inspired by Git, enabling efficient management of code repositories, collaborative development, and streamlined version control operations.
 
