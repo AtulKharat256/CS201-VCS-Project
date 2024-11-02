@@ -98,8 +98,9 @@ This VCS consists of various C++ modules working together to create a streamline
 
 This project was inspired by Git's design. Check out these resources for a deeper understanding:
 
-- [Git Internals](https://git-scm.com/book/en/v2/Getting-Started-Git-Basics#_git_internals) - Explore Git’s underlying mechanisms.
-- [Git Branching Documentation](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell) - Learn about branching and merging in Git.
+- [Git Basic](https://wyag.thb.lt/#GitRepository) - Write yourself a GIT
+- [Git Internels](https://www.leshenko.net/p/ugit/)
+- [Git Objects and Internels](https://git-scm.com/book/en/v2/Git-Internals-Git-Objects)
 
 
     
