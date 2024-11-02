@@ -85,7 +85,6 @@ After launching, the following commands are available:
 
 - **File Tracking**: This VCS currently tracks only files in the specified working directory and not in subdirectories.
 - **Error Handling**: Limited error handling; ensure commands are used correctly as described.
-- **Three-Way Merge Limitation**: During three-way merges, an external editor (like Notepad on Windows) will open to resolve conflicts, but it may not appear in screen recordings.
 
 🧩 **Project Structure**
 
