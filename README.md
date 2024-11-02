@@ -32,6 +32,25 @@ This project is a lightweight, custom-built Version Control System (VCS) inspire
 5. Commit Changes: Commit staged files to the repository with a descriptive message.
    atom-commit
 
-⚠️ Important Notes
-Internal Folder: On initialization, a .git folder is created in the working directory to store VCS internals.
-Single-Directory Limitation: A variables directory will link the source code in src to your working directory, making it necessary to create a fresh src copy for each new working directory.
+## ⚠️ Important Notes
+- **Internal Folder**: When initializing, a `.git` folder is created in your working directory to store VCS internals.
+- **Single-Directory Limitation**: The `variables` directory links the source code in `src` to your working directory, so you’ll need to create a fresh `src` copy if you want to start a new working directory.
+
+## 🔧 Project Limitations
+- **File Tracking**: This VCS currently tracks only files in the specified working directory and not in subdirectories.
+- **Error Handling**: Limited error handling; ensure commands are used correctly as described.
+- **Three-Way Merge Limitation**: During three-way merges, an external editor (like Notepad on Windows) will open to resolve conflicts, but it may not appear in screen recordings.
+
+## 🧩 Project Structure
+This VCS consists of various C++ modules working together to create a streamlined version control experience. Key modules include:
+
+- **Branching and Merging**: Efficient branch creation, deletion, and merging functionality with options for fast-forward and three-way merges.
+- **Staging and Committing**: Manage your code's lifecycle from staging changes to final commits.
+- **File Management**: Handles file storage and retrieval within a `.git`-like structure for easy tracking and versioning.
+
+## 📖 Resources and Documentation
+This project was inspired by Git's design. Check out these resources for a deeper understanding:
+
+- [Git Internals](https://www.freecodecamp.org/news/git-internals-objects-branches-create-repo/) - Explore Git’s underlying mechanisms.
+- [Git Branching Documentation](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell) - Learn about branching and merging in Git.
+
