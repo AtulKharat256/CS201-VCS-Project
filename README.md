@@ -32,13 +32,15 @@ This project is a lightweight, custom-built Version Control System (VCS) inspire
 5. Commit Changes: Commit staged files to the repository with a descriptive message.
    atom-commit
 
+
 ## ⚠️ Important Notes
 - **Internal Folder**: When initializing, a `.git` folder is created in your working directory to store VCS internals.
-- **Single-Directory Limitation**: The `variables` directory links the source code in `src` to your working directory, so you’ll need to create a fresh `src` copy if you want to start a new working directory.
+- **Single-Directory Limitation**: The `variables` directory links the main project folder (`CS201-VCS-Project`) to your working directory. If you want to start a new working directory, you’ll need to create a fresh copy of `CS201-VCS-Project`.
 
 ## 🔧 Project Limitations
 - **File Tracking**: This VCS currently tracks only files in the specified working directory and not in subdirectories.
 - **Error Handling**: Limited error handling; ensure commands are used correctly as described.
+- **Three-Way Merge Limitation**: During three-way merges, an external editor (like Notepad on Windows) will open to resolve conflicts, but it may not appear in screen recordings.
 
 ## 🧩 Project Structure
 This VCS consists of various C++ modules working together to create a streamlined version control experience. Key modules include:
