@@ -13,7 +13,7 @@ class Branch;
 // class Stash;
 
 string branching_menu = R"(
-    welcome to vcs, some vcs commands.
+    welcome to ATOM, some ATOM commands.
     
     init                               {creates the default repo} (if it's your first time then choose this.)
     branch   <branch_name>             {creates a new branch with given name}
