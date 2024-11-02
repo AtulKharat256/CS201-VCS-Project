@@ -38,13 +38,13 @@ void merge() {
     Branch master;
     string command;
     cin >> command;
-    if (command == "atom-ffm") {
+    if (command == "ffm") {
         string branch;
         cin >> branch;
         Branch b1(branch);
         master.fast_forward_merge(b1);
     }
-    else if (command == "atom-twm") {
+    else if (command == "twm") {
         string branch;
         cin >> branch;
         Branch b1(branch);
