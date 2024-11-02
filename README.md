@@ -39,7 +39,6 @@ This project is a lightweight, custom-built Version Control System (VCS) inspire
 ## 🔧 Project Limitations
 - **File Tracking**: This VCS currently tracks only files in the specified working directory and not in subdirectories.
 - **Error Handling**: Limited error handling; ensure commands are used correctly as described.
-- **Three-Way Merge Limitation**: During three-way merges, an external editor (like Notepad on Windows) will open to resolve conflicts, but it may not appear in screen recordings.
 
 ## 🧩 Project Structure
 This VCS consists of various C++ modules working together to create a streamlined version control experience. Key modules include:
