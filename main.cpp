@@ -65,49 +65,49 @@ int main() {
     string command;
     prefix << GREEN << "$ " << RESET;
     cin >> command;
-    while (command != "quit")
+    while (command != "atom-quit")
     {
-        if (command == "init") {
+        if (command == "atom-init") {
             Branch master;
         }
-        else if (command == "branch") {
+        else if (command == "atom-branch") {
             string branch_name;
             cin >> branch_name;
             Branch master(branch_name);
         }
-        else if (command == "checkout") {
+        else if (command == "atom-checkout") {
             string branch_name;
             cin >> branch_name;
             Branch master(branch_name);
             head.change_branch(master.branch_name);
         }
-        else if (command == "delete") {
+        else if (command == "atom-delete") {
             string branch_name;
             cin >> branch_name;
             Branch master(branch_name);
             master.delete_branch();
         }
-        else if (command == "stage") {
+        else if (command == "atom-stage") {
             Branch master;
             master.commit();
         }
-        else if (command == "show") {
+        else if (command == "atom-show") {
             list_branches();
         }
-        else if (command == "menu") {
+        else if (command == "atom-menu") {
             cout << branching_menu << endl;
         }
-        else if (command == "merge") {
+        else if (command == "atom-merge") {
             merge();
         }
-        else if (command == "merges") {
+        else if (command == "atom-merges") {
             cout << merge_menu << endl;
         }
-        else if (command == "stash") {
+        else if (command == "atom-stash") {
             Branch master;
             master.create_stash();
         }
-        else if (command == "restash") {
+        else if (command == "atom-restash") {
             Branch master;
             master.restore_stash();
         }
