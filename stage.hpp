@@ -49,18 +49,18 @@ class StagingArea{
             string command;
             cout << GREEN << "$ " << RESET;
             cin >> command;
-            while(command!="commit"){
-                if(command=="add"){
+            while(command!="atom-commit"){
+                if(command=="atom-add"){
                     string file;
                     cin>>file;
                     stageFile(file);
-                }else if(command=="remove"){
+                }else if(command=="atom-remove"){
                     string file;
                     cin >> file;
                     unstageFile(file);
-                }else if(command=="show"){
+                }else if(command=="atom-show"){
                     printStagedFiles();
-                }else if(command=="menu"){
+                }else if(command=="atom-menu"){
                     cout << staging_menu << endl;
                 }else{
                     print_err("unknown command entered");
