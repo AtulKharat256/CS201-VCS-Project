@@ -61,20 +61,47 @@ Make sure you have:
     atom-branch
     atom-checkout
     atom-merge ffm master
-###Command Menu
+# Command Menu
 
-Commands available after launching include:
+After launching, the following commands are available:
 
-  Branch: atom-branch <branch_name>
-  Checkout: atom-checkout <branch_name>
-  Delete Branch: atom-delete <branch_name>
-  Stage Files: atom-stage
-  Show Branches: atom-show
-  Menu Help: atom-menu
-  Merge: atom-merge <merge-type> <branch_name>
-  View Merge Types: atom-merges
-  Stash Changes: atom-stash
-  Apply Stash: atom-restash
+- **Branch**: `atom-branch <branch_name>` - Create a new branch with the specified name.
+- **Checkout**: `atom-checkout <branch_name>` - Switch to the specified branch.
+- **Delete Branch**: `atom-delete <branch_name>` - Remove the specified branch.
+- **Stage Files**: `atom-stage` - Stage all modified files for commit.
+- **Show Branches**: `atom-show` - Display a list of all branches.
+- **Menu Help**: `atom-menu` - Show help information for commands.
+- **Merge**: `atom-merge <merge-type> <branch_name>` - Merge the specified branch using the chosen merge type.
+- **View Merge Types**: `atom-merges` - List available merge types.
+- **Stash Changes**: `atom-stash` - Temporarily store changes that are not ready to be committed.
+- **Apply Stash**: `atom-restash` - Apply stashed changes back to your working directory.
+
+⚠️ **Important Notes**
+
+- **Internal Folder**: When initializing, a `.git` folder is created in your working directory to store VCS internals.
+- **Single-Directory Limitation**: The variables directory links the main project folder (`CS201-VCS-Project`) to your working directory. To start a new working directory, create a fresh copy of `CS201-VCS-Project`.
+
+🔧 **Project Limitations**
+
+- **File Tracking**: This VCS currently tracks only files in the specified working directory and not in subdirectories.
+- **Error Handling**: Limited error handling; ensure commands are used correctly as described.
+- **Three-Way Merge Limitation**: During three-way merges, an external editor (like Notepad on Windows) will open to resolve conflicts, but it may not appear in screen recordings.
+
+🧩 **Project Structure**
+
+This VCS consists of various C++ modules working together to create a streamlined version control experience. Key modules include:
+
+- **Branching and Merging**: Efficient branch creation, deletion, and merging functionality with options for fast-forward and three-way merges.
+- **Staging and Committing**: Manage your code's lifecycle from staging changes to final commits.
+- **File Management**: Handles file storage and retrieval within a `.git`-like structure for easy tracking and versioning.
+
+📖 **Resources and Documentation**
+
+This project was inspired by Git's design. Check out these resources for a deeper understanding:
+
+- [Git Internals](https://git-scm.com/book/en/v2/Getting-Started-Git-Basics#_git_internals) - Explore Git’s underlying mechanisms.
+- [Git Branching Documentation](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell) - Learn about branching and merging in Git.
+
 
     
     
